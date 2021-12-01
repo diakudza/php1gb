@@ -61,7 +61,7 @@
                 <?= getSomeReviews($id_good) ?>
 
                 <?php if(!empty($_SESSION['user_login'])): ?>
-                   <form action="" method="post">
+                   <form action="" class="formForReview" method="post">
                        <input type="hidden" value="<?= $id_good ?>" name="good_id" >
                        <textarea name="reviewtext" class="product__button"></textarea>
                        <button type="submit" class="product__button" name="reviewform">Оправить</button>

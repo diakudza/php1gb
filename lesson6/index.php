@@ -24,6 +24,9 @@ if(!empty($_GET['page'])){
         case 'registration':
             template('registration', 'registration');
             break;
+        case 'cabinet':
+            template('cabinet', 'registration');
+            break;
         case 'login':
             template('login', 'login');
             break;

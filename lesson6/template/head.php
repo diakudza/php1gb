@@ -1,10 +1,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title><?= $cssname ?></title>
+    <title><?= $pagename ?></title>
     <link rel="stylesheet" href="../public/css/<?= $cssname ?>.css">
     <?php
-    if ($cssname == 'login'||$cssname == '404'){
+    if ($pagename == 'login'||$pagename == '404'){
         echo  "<link rel=\"stylesheet\" href=\"../public/css/registration.css\">";
     }
 

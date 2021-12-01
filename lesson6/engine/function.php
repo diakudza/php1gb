@@ -85,7 +85,7 @@
             LEFT JOIN user u ON r.user_id = u.idUser
             LEFT JOIN goods g ON r.good_id = g.id WHERE r.good_id=$id") as $item): ?>
             <div class="review">
-                <div><?= $item['login'] ?><div><div><?= $item['data'] ?></div></div><?= $item['text'] ?></div>
+                <div><?= $item['data'] ?></div><div><?= $item['login'] ?></div><div><?= $item['text'] ?></div>
             </div><br>
         <?php endforeach;}
 
